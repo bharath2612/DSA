@@ -2,8 +2,8 @@
 #include <cmath>
 using namespace std;
 
-//O(n) time comp , O(1) aux space
-//Remove duplicates from sorted arrays
+// O(n) time comp , O(1) aux space
+// Remove duplicates from sorted arrays
 int remDups(int arr[], int n)
 {
     int res = 1;

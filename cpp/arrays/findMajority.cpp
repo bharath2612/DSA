@@ -2,12 +2,12 @@
 using namespace std;
 
 // O(n) implementation
-int findMajority(int arr[], int size)
+int findMajority(int nums[], int size)
 {
     int res = 0, count = 1;
     for (int i = 0; i < size; i++)
     {
-        if (arr[res] == arr[i])
+        if (nums[res] == nums[i])
         {
             count++;
         }
@@ -25,7 +25,7 @@ int findMajority(int arr[], int size)
     count = 0;
     for (int i = 0; i < size; i++)
     {
-        if (arr[res] == arr[i])
+        if (nums[res] == nums[i])
         {
             count++;
         }
@@ -38,18 +38,10 @@ int findMajority(int arr[], int size)
 }
 int main()
 {
-    int arr[] = {
-        3,
-        3,
-        3,
-        3,
-        3,
-        2,
-        2,
-        2,
-        2};
+    int nums[] = {
+        6, 5, 5};
     cout
-        << "index of the majority is " << findMajority(arr, 8)
+        << "index of the majority is " << findMajority(nums, 3)
         << endl;
     return 0;
 }
